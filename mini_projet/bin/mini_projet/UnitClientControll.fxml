@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="504.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mini_projet.pageClientController">
+   <children>
+      <TableView fx:id="table" layoutX="36.0" layoutY="132.0" prefHeight="320.0" prefWidth="711.0">
+        <columns>
+          <TableColumn fx:id="codeClientCol" prefWidth="101.0" text="ID Tit" />
+          <TableColumn fx:id="nomCol" prefWidth="110.0" text="Nom" />
+            <TableColumn fx:id="prenomCol" prefWidth="121.0" text="Prénom" />
+            <TableColumn fx:id="adresseCol" prefWidth="147.0" text="Adresse" />
+            <TableColumn fx:id="actionCol" prefWidth="231.0" text="Actions" />
+        </columns>
+      </TableView>
+      <Text layoutX="39.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer Client" wrappingWidth="235.13671875">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="addclient" layoutX="39.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#getAddClient" prefHeight="36.0" prefWidth="66.0" style="-fx-background-color: #00c853;" text="Ajouter" />
+      <Button fx:id="refrech" layoutX="116.0" layoutY="69.0" mnemonicParsing="false" onMouseClicked="#refrechTable" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: #ffeb3b;" text="Actualiser" />
+      <Button fx:id="close" layoutX="658.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: #607d8b;" text="Quiter" />
+   </children>
+</AnchorPane>

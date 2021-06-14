@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mini_projet.AjouterClientController">
+   <children>
+      <HBox prefHeight="76.0" prefWidth="600.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" lineSpacing="10.0" prefHeight="55.0" prefWidth="181.0" text="Ajouter Client" textFill="#3b90ff" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="49.0" prefWidth="597.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom" textAlignment="CENTER" wrappingWidth="153.13671875" />
+            <TextField fx:id="nomTF" alignment="CENTER" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="248.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="8.0" right="8.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="8.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="59.0" prefHeight="50.0" prefWidth="570.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom" textAlignment="CENTER" wrappingWidth="156.13671875" />
+            <TextField fx:id="prenomTF" prefHeight="25.0" prefWidth="245.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="77.0" prefWidth="570.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" textAlignment="CENTER" wrappingWidth="153.13671875" />
+            <TextField fx:id="adresseTF" prefHeight="25.0" prefWidth="245.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="178.0" prefWidth="570.0">
+         <children>
+            <Button fx:id="add" mnemonicParsing="false" onMouseDragged="#addClient" prefHeight="42.0" prefWidth="155.0" style="-fx-background-color: #64dd17;" text="Enregistrer" textFill="#171717">
+               <HBox.margin>
+                  <Insets right="12.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="refrech" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseDragged="#clean" prefHeight="47.0" prefWidth="162.0" style="-fx-background-color: #ffea00;" text="Annuler">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="10.0" top="8.0" />
+   </padding>
+</VBox>

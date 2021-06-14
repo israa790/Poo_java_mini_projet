@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="337.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mini_projet.MaxSoldeController">
+   <children>
+      <TableView fx:id="table" layoutX="36.0" layoutY="132.0" prefHeight="96.0" prefWidth="581.0">
+        <columns>
+          <TableColumn fx:id="numCol" prefWidth="89.0" text="Num compte" />
+          <TableColumn fx:id="soldeCol" prefWidth="88.0" text="Solde" />
+            <TableColumn fx:id="decMaxCol" prefWidth="119.0" text="Decouvert max" />
+            <TableColumn fx:id="debiMaxCol" prefWidth="101.0" text="Débit max" />
+            <TableColumn fx:id="situationCol" prefWidth="93.0" text="Situation" />
+            <TableColumn fx:id="codeClientCol" prefWidth="90.0" text="Code Client" />
+        </columns>
+      </TableView>
+      <Text fill="#28bada" layoutX="44.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Solde" wrappingWidth="205.13671875">
+         <font>
+            <Font name="Arial Bold" size="31.0" />
+         </font>
+      </Text>
+      <Button fx:id="close" layoutX="544.0" layoutY="275.0" mnemonicParsing="false" onAction="#close" onMouseClicked="#close" prefHeight="36.0" prefWidth="73.0" style="-fx-background-color: #607d8b;" text="Quiter" />
+   </children>
+</AnchorPane>

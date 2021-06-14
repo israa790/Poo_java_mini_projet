@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mini_projet.Controll">
+   <children>
+      <Text layoutX="38.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer Client:" wrappingWidth="235.13671875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="client" layoutX="299.0" layoutY="56.0" mnemonicParsing="false" onAction="#gererClient" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #d1c4e9;" text="Client">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="close" layoutX="622.0" layoutY="519.0" mnemonicParsing="false" onMouseClicked="#close" prefHeight="44.0" prefWidth="120.0" style="-fx-background-color: #ec407a;" text="Quiter" textFill="#f5f5f5">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Text layoutX="38.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gérer Compte:" wrappingWidth="162.0546875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="compte" layoutX="299.0" layoutY="127.0" mnemonicParsing="false" onAction="#gererCompte" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #b39ddb;" text="Compte">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Text layoutX="38.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max Solde:" wrappingWidth="162.0546875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crediter Compte:" wrappingWidth="162.0546875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="38.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Débiter Compte:" wrappingWidth="162.0546875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Virement d'un Compte:" wrappingWidth="235.13671875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="34.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="liste à decouvert Compte:" wrappingWidth="243.13671875">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="debiter" layoutX="299.0" layoutY="332.0" mnemonicParsing="false" onAction="#debiterCompte" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #673ab7;" text="Débiter" textFill="WHITESMOKE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="virement" layoutX="299.0" layoutY="409.0" mnemonicParsing="false" onAction="#virementCompte" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #5e35b1;" text="Virement" textFill="#fffffff0">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="decouvert" layoutX="299.0" layoutY="483.0" mnemonicParsing="false" onAction="#listeDecouvert" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #311b92;" text="Liste Découvert" textFill="WHITESMOKE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="solde" layoutX="299.0" layoutY="200.0" mnemonicParsing="false" onAction="#maxSolde" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #9575cd;" text="Max Solde" textFill="WHITESMOKE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="crediter" layoutX="299.0" layoutY="268.0" mnemonicParsing="false" onAction="#crediterCompte" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #7e57c2;" text="Créditer" textFill="WHITESMOKE">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
